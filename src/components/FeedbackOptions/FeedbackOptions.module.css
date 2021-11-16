@@ -1,0 +1,32 @@
+:root {
+  --animation: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buttonsList {
+  display: flex;
+}
+
+.item {
+  margin-right: 10px;
+}
+
+.button {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1px solid black;
+
+  transition: color 250ms var(--animation),
+    background-color 250ms var(--animation), box-shadow 250ms var(--animation);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.button:active {
+  background-color: blue;
+}
